@@ -182,16 +182,15 @@ a {
         display: block;
         border: 0;
         background-color: transparent;
-        color: white;
+        color: rgb(255, 255, 255);
         font-size: 30px;
         margin: 20px;
-        align-self: flex-end;
+        align-self: center;
     }
 
     ul {
         display: none;
         background-color: #2b2c38;
-        margin: 0ppx;
     }
 
     ul.show {
@@ -200,11 +199,16 @@ a {
 
     nav {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row-reverse;
+        justify-content: space-between;
         background-color: #2b2c38;
     }
 
     .logo {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        height: 50px;
+        width: 50px;
     }
 }
